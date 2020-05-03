@@ -1,0 +1,68 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: darkorchid;">
+
+    <form method="post" action="procesar.php" id="formulario1">
+        Ingrese Usuario:
+        <input type="text" id="usuario" name="usuario" size="30">
+        <br> Ingrese Contraseña:
+        <input type="password" id="clave" name="clave" size="10">
+        <br>
+        <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+    </form>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById("formulario1").addEventListener('submit', validar, false);
+        }
+
+        function validar(evt) {
+            var usu = document.getElementById("usuario").value;
+            var cla = document.getElementById("clave").value;
+            if (usu.length == 0 || cla.length == 0) {
+                alert('El nombre de usuario o clave está vacío');
+                evt.preventDefault();
+            }
+        }
+    </script>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="width:200px;height:200px;background:#a34d07" id="recuadro1">
+        2
+    </div>
+
+
+    <script>
+        addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById('recuadro1').addEventListener('click', presion1, false);
+        }
+
+        function presion1()
+
+        {
+            document.getElementById('recuadro1') * 2;
+
+        }
+    </script>
+</body>
+
+</html>
